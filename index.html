@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Usuario</title>
+	<meta charset="utf-8">
+	<!--<script> 
+		function abrir() { 
+		open('index_formulario.html','','top=300,left=300,width=400,height=500') ; 
+		} 
+	</script>
+	<script> 
+		function abrir2() { 
+		open('index_buscar.html','','top=300,left=300,width=300,height=300') ; 
+		} 
+	</script>-->
+</head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+	<!--<input type=image src="img/1.png" width="50" height="50" onclick="activarTab(todos)"><br>Registrar Cita
+	<br>
+	<input type=image src="img/2.png" width="50" height="50" onclick="activarTab(todos)"><br>Buscar por
+	<div>-->
+	<div class="w3-bar w3-black">
+	  <button class="w3-bar-item w3-button" onclick="activar('formulario')">Registrar</button>
+	  <button class="w3-bar-item w3-button" onclick="activar('buscar')">Buscar</button>
+	</div>
+
+		<div class="general" id="formulario">
+			<form>
+			<h2 class="w3-animate-zoom">Registro de cita</h2>
+				N° de ficha Médica:* <br>
+				<input type="number" name="ficha" placeholder="N° de ficha" required class="datos">
+				<br>
+				Nombre:* <br>
+				<input type="text" name="Nombre" placeholder="Escribe tu nombre" required class="datos">
+				<br>
+				Apellido:*<br>
+				<input type="text" name="Apellido" placeholder="Escribe tu apellido" required class="datos">
+				<br>
+				Cedula:*<br>
+				<input type="number" name="Cedula" placeholder="Escribe tu cedula" maxlength="10" required class="datos">
+				<br>
+				Nombre del Médico:* <br>
+				<input type="text" name="medico" placeholder="Nombre del medico" required class="datos">
+				<br>
+				<input type="radio" name="gender" value="male" checked>Femenino
+				<input type="radio" name="gender" value="female"> Masculino
+				<input type="radio" name="gender" value="other"> Otro
+				<br>
+				<br>
+				Correo:<br>
+				<input type="email" name="email" class="datos">
+				<br>
+				Sintomas: <br>
+				<textarea name="mensaje" placeholder="Escriba sus sintomas" ""></textarea>
+				<br><br>
+				<input type="submit" value="Registrar cita" id="boton" class="datos">
+				
+			</form>
+		</div>
+	
+	
+	<div style="display: none" id="buscar" class="general">
+		<form action="/action_page.php">
+		  <input list="browsers" name="browser">
+		  <datalist id="browsers">
+		    <option value="Precio">
+		    <option value="Recomendaciones">
+		    <option value="Cercanía">
+		  </datalist>
+		  <input type="submit">
+		</form>
+	</div>
+	<div class="w3-container">
+	  <h2>Imagen en circulo</h2>
+	  <img src="img/2.jpg" class="w3-circle w3-hover-sepia" alt="Norway" style="width:50%">
+	</div>
+	<script>
+		function activar(idTab){
+			var i;
+			var x= document.getElementsByClassName("general")
+			for (i=0;i< x.length; i++){
+				x[i].style.display="none";
+			}
+			document.getElementById(idTab).style.display="block";
+		}
+	</script>
+</body>
+</html>

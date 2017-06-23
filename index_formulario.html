@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>formulario</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="general">
+		<div class="formulario">
+			<form>
+			<h2>Registro de cita</h2>
+				N° de ficha Médica:* <br>
+				<input type="number" name="ficha" placeholder="N° de ficha" required class="datos">
+				<br>
+				Nombre:* <br>
+				<input type="text" name="Nombre" placeholder="Escribe tu nombre" required class="datos">
+				<br>
+				Apellido:*<br>
+				<input type="text" name="Apellido" placeholder="Escribe tu apellido" required class="datos">
+				<br>
+				Cedula:*<br>
+				<input type="number" name="Cedula" placeholder="Escribe tu cedula" maxlength="10" required class="datos">
+				<br>
+				Nombre del Médico:* <br>
+				<input type="text" name="medico" placeholder="Nombre del medico" required class="datos">
+				<br>
+				<input type="radio" name="gender" value="male" checked>Femenino
+				<input type="radio" name="gender" value="female"> Masculino
+				<input type="radio" name="gender" value="other"> Otro
+				<br>
+				<br>
+				Correo:<br>
+				<input type="email" name="email" class="datos">
+				<br>
+				Sintomas: <br>
+				<textarea name="mensaje" placeholder="Escriba sus sintomas" ""></textarea>
+				<br><br>
+				<input type="submit" value="Registrar cita" id="boton" class="datos">
+				
+			</form>
+		</div>
+	</div>
+	
+</body>
+</html>
